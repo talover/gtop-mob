@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>gtop</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<!-- 
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+	<link rel="stylesheet" href="css/main.css">
+<!-- 
+	<link rel="stylesheet/less" type="text/css" href="css/main.less" />
+	<script src="js/vendor/less.js" type="text/javascript"></script>
+ -->
+	<!--[if lt IE 9]>
+			<script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!--[if lt IE 8]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+
+
+	<div id="menu">
+		<aside id="left-aside">
+			<div class="top-aside">
+				<a href="#" class="search-btn"><i></i></a>
+				<a href="index.html" class="logo"><i></i></a>
+			</div>
+			<nav class="main-nav">
+				<ul>
+					<li class="play-games">
+						<a href="#" data-color="play-games">
+							<i class="category"></i>
+							
+							<span class="ico-block ">
+								<i><i></i></i>
+							</span>
+							<span class="title">Игровые новости</span>
+						</a>
+					</li>
+					<li class="ios">
+						<a href="#" data-color="ios">
+							<i class="category"></i>
+
+							<span class="ico-block ">
+								<i><i></i></i>
+							</span>
+							<span class="title">iOS</span>
+						</a>
+					</li>
+					<li class="android">
+						<a href="#" data-color="android">
+							<i class="category"></i>
+							
+							<span class="ico-block ">
+								<i><i></i></i>
+							</span>
+							<span class="title">Android</span>
+						</a>
+					</li>
+					<li class="windows-phone">
+						<a href="#" data-color="windows-phone">
+							<i class="category"></i>
+							
+							<span class="ico-block ">
+								<i><i></i></i>
+							</span>
+							<span class="title">Windows Phone</span>
+						</a>
+					</li>
+					<li class="consoles">
+						<a href="#" data-color="consoles">
+							<i class="category"></i>
+							
+							<span class="ico-block ">
+								<i><i></i></i>
+							</span>
+							<span class="title">Консоли</span>
+						</a>
+					</li>
+					<li class="pc">
+						<a href="#" data-color="pc">
+							<i class="category"></i>
+							
+							<span class="ico-block ">
+								<i><i></i></i>
+							</span>
+							<span class="title">ПК</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div id="logger" class="clearfix">
+				<a href="#" class="logger-btn">
+					<span class="img-block">
+						<img src="img/pic-1.jpg" alt="">
+					</span>
+					<i></i>
+				</a>
+				<div class="logger-info">
+					<div class="level">3</div>
+					<ul>
+						<li><i class="like"></i>2598</li>
+						<li><i class="view"></i>16342</li>
+					</ul>
+				</div>
+				<div class="logger-dropdown">
+					<h3>Кирилл Царевич</h3>
+					<span>Профиль</span>
+					<ul>
+						<li><a href="#">Настройки</a></li>
+						<li><a href="#">Помощь</a></li>
+						<li class="exid"><a href="#">Выйти</a></li>
+					</ul>
+				</div>
+			</div>
+			<a  href="#" class="write-article">Написать статью</a>
+
+			<div class="login-block">
+				<ul>
+					<li><a href="#">Войти</a></li>
+					<li>
+						<span>Еще не пишете обзоры?</span>
+						<a href="#">Зарегеистрируйтесь</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+	</div>
+
+	<div id="topbar" class="slide">
+		<a id="menu-button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<a class="logo" href="#"></a>
+	</div>
+
+	<div id="main" class="android container slide">
+		<input id="color" type="hidden" value="android">
+
+		<section id="profile-wrap">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs profile-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Профиль</a></li>
+				<li role="presentation"><a href="#profile-gifts" aria-controls="profile-gifts" role="tab" data-toggle="tab">Подарки</a></li>
+				<li role="presentation"><a href="#profile-setting" aria-controls="profile-setting" role="tab" data-toggle="tab">Настройки</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="profile">
+					<div class="profile-info">
+						<div class="img-block">
+							<img src="img/pic-60.jpg" alt="">
+						</div>
+						<div class="text-block">
+							<h3>Leo Ershov</h3>
+							<p>г. Киев, на сайте с <span>22 октября 2012</span></p>
+
+							<ul class="pluse-minus">
+								<li class="pluse">+ 15,0</li>
+								<li class="minus">- 399,3</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="rating-wrap">
+						<h4>Ваш уровень: <span>9</span></h4>
+
+						<div class="rating">
+							<div style="width:70%"></div>
+						</div>
+						<a href="#">Подробнее об уровневой системе</a>
+					</div>
+
+					<div class="contacts">
+						<ul>
+							<li>
+								<a href="#"><i class="apple"></i><span>wisdommood@ya.ru</span></a>
+								<a class="edit" href="#"><i></i></a>
+							</li>
+
+							<li>
+								<a href="#"><i class="google-plus"></i><span>wisdom_599@gmail.com</span></a>
+								<a class="edit" href="#"><i></i></a>
+							</li>
+
+							<li>
+								<a href="#"><i class="mail"></i><span>contact@gmail.com</span></a>
+								<a class="edit" href="#"><i></i></a>
+							</li>
+						</ul>
+					</div>
+
+
+					<div class="profile-iner">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs color" role="tablist">
+							<li role="presentation" class="active"><a href="#profile-likes" aria-controls="profile-likes" role="tab" data-toggle="tab">ПОНРАВИЛОСЬ</a></li>
+							<li role="presentation"><a href="#profile-coupons" aria-controls="profile-coupons" role="tab" data-toggle="tab">КУПОНЫ <span>(73)</span></a></li>
+							<li role="presentation"><a href="#profile-comments" aria-controls="profile-comments" role="tab" data-toggle="tab">КОММЕНТАРИИ <span>(1)</span></a></li>
+							<li role="presentation"><a href="#profile-reviews" aria-controls="profile-reviews" role="tab" data-toggle="tab">ОБЗОРЫ <span>(93)</span></a></li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="profile-likes">
+								<h2>Ваши доходы:</h2>
+								<div class="analytics">
+									<img src="img/analytics.jpg" alt="">
+								</div>
+
+								<div class="game-info-wrap">
+									<div class="game-info">
+										<div class="left-block">
+											<span></span>
+
+											<ul class="platform-ico">
+												<li><i class="apple"></i></li>
+											</ul>
+										</div>
+										<div class="right-block">
+											<h3>Apple Gamecenter — одна из одних первыхпых игр, c заголов поддежкой игры.</h3>
+											<p class="day">15 Октября 2015 / <span>Аркады</span></p>
+
+											<ul class="info-list">
+												<li><i class="views"></i><p>ПРОСМОТРОВ<span>17424</span></p></li>
+												<li><i class="comments"></i><p>КОММЕНТАРИЕВ<span>7027</span></p></li>
+												<li><i class="likes"></i><p>ЛАЙКОВ<span>75457</span></p></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="game-info-wrap">
+									<div class="game-info">
+										<div class="left-block">
+											<span></span>
+
+											<ul class="platform-ico">
+												<li><i class="apple"></i></li>
+											</ul>
+										</div>
+										<div class="right-block">
+											<h3>Fellow Gamecenter — одна из одних первыхпых игр, c заголов поддежкой игры.</h3>
+											<p class="day">15 Октября 2015 / <span>Жанры</span></p>
+
+											<ul class="info-list">
+												<li><i class="views"></i><p>ПРОСМОТРОВ<span>17424</span></p></li>
+												<li><i class="comments"></i><p>КОММЕНТАРИЕВ<span>7027</span></p></li>
+												<li><i class="likes"></i><p>ЛАЙКОВ<span>75457</span></p></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<nav class="pagination-cont">
+									<ul class="pagination">
+										<li class="prev"><a href="#"><i></i> Назад</a></li>
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">5</a></li>
+										<li><a href="#">6</a></li>
+										<li class="next"><a href="#">Еще <i></i></a></li>
+									</ul>
+								</nav>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="profile-coupons">
+								<div class="container-fluid">
+									<div class="row">
+
+										<div class="col-lg-6 col-md-6 col-sm-6 coupon-wrap">
+											<div class="coupon">
+												<div class="left-block">
+													<div class="img-block"><img src="img/pic-29.jpg" alt=""></div>
+													<ul class="rating big">
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a href="#"></a></li>
+														<li><a href="#"></a></li>
+													</ul>
+
+													
+													<ul class="platform">
+														<li><a class="apple" href="#"></a></li>
+													</ul>
+												</div>
+												<div class="right-block">
+													<h3>CALL OF MINI: INFINITY</h3>
+													<p class="category">Arcane Studios</p>
+													<p class="day">12.05.2014</p>
+													<p class="coupons-num old">
+														ИСТЕК
+													</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-lg-6 col-md-6 col-sm-6 coupon-wrap">
+											<div class="coupon">
+												<div class="left-block">
+													<div class="img-block"><img src="img/pic-44.jpg" alt=""></div>
+													<ul class="rating big">
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a href="#"></a></li>
+														<li><a href="#"></a></li>
+													</ul>
+										
+													<ul class="platform">
+														<li><a class="apple" href="#"></a></li>
+													</ul>
+												</div>
+												<div class="right-block">
+													<h3>CALL OF MINI: INFINITY</h3>
+													<p class="category">Arcane Studios</p>
+													<p class="day">12.05.2014</p>
+													<p class="coupons-num">
+														BX3PS9
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<nav class="pagination-cont">
+									<ul class="pagination">
+										<li class="prev"><a href="#"><i></i> Назад</a></li>
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">5</a></li>
+										<li><a href="#">6</a></li>
+										<li class="next"><a href="#">Еще <i></i></a></li>
+									</ul>
+								</nav>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="profile-comments">
+
+								<div class="comment">
+									<div class="left-block">
+										<p class="review">Обзор игры на страже чистоты воздуха, часть <span>49</span></p>
+									</div>
+									<div class="right-block">
+										<p class="likes up">+27</p>
+										<div class="img-block">
+											<img src="img/pic-30.jpg" alt="">
+										</div>
+										<div class="text-block">
+											<h4>Кирилл Царевич  <i class="bad"></i><span>15 декабря 2011</span></h4>
+											<p>
+												Что вы понимаете в играх ребята, этот жанр является важной частью жизни любой имиджборды, а сильно увлекающиеся....
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="comment">
+									<div class="left-block">
+										<p class="review">Обзор игры на страже чистоты воздуха, часть <span>149</span></p>
+									</div>
+									<div class="right-block">
+										<p class="likes down">-5</p>
+										<div class="img-block">
+											<img src="img/pic-31.jpg" alt="">
+										</div>
+										<div class="text-block">
+											<h4>Кирилл Царевич  <i class="good"></i><span>15 декабря 2011</span></h4>
+											<p>
+												Что вы понимаете в играх ребята, этот жанр является важной частью жизни любой имиджборды, а сильно увлекающиеся....
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="comment">
+									<div class="left-block">
+										<div class="img-block">
+											<img src="img/pic-44.jpg" alt="">
+										</div>
+										<h3>CALL OF MINI: INFINITY</h3>
+										<p class="category">Arcane Studios</p>
+
+										<ul class="platform">
+											<li><a class="apple" href="#"></a></li>
+											<li><a class="android" href="#"></a></li>
+											<li><a class="windows-os" href="#"></a></li>
+											<li><a class="pc" href="#">пк</a></li>
+										</ul>
+									</div>
+									<div class="right-block">
+										<div class="text-block">
+											<h4 class="review"><span>15 декабря 2011</span></h4>
+											<ul class="rating big">
+												<li><a class="active" href="#"></a></li>
+												<li><a class="active" href="#"></a></li>
+												<li><a class="active" href="#"></a></li>
+												<li><a href="#"></a></li>
+												<li><a href="#"></a></li>
+											</ul>
+
+											<blockquote>Кристофер Нолан является одним из лучших режиссеров нашего времени.</blockquote>
+											<p>
+												Он снял таки потрясающие картины как «Начало», трилогия об Темном рыцаре, Престиж, «Мементо» и др. Фильм этот я очень ждал, потому что Нолан является моим любимым режиссером. Тема у фильма сложная, и реализовать ее на 100% процент может только мастер. Фильм долго шел на наши экраны, менялись режиссеры. Но вот дошла картина на наши экраны.
+											</p>
+											<p>
+												На нашей земле засуха и на земле растет только кукуруза. Но однажды посылают команду в космос, чтоб найти планету, где люди могли бы поселится. В фильме затронули множество тем и теорий. Разные черные дыры, физические теории, временные парадоксы, измерения. 
+											</p>
+										</div>
+									</div>
+								</div>
+								
+								<nav class="pagination-cont">
+									<ul class="pagination">
+										<li class="prev"><a href="#"><i></i> Назад</a></li>
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">5</a></li>
+										<li><a href="#">6</a></li>
+										<li class="next"><a href="#">Еще <i></i></a></li>
+									</ul>
+								</nav>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="profile-reviews">							
+								<div class="container-fluid reviews-wrap">
+
+									<div class="row">
+
+										<div class="reviews col-lg-4 col-md-6">
+											<div class="img-wrap" style="background-image:url(img/pic-47.jpg)">
+
+												<div class="header-reviews">
+													<span>ОБЗОР</span>
+													<p>10 ДЕКАБРЯ 2014</p>
+												</div>
+												<button type="button" class="btn btn-default">ОБЗОР</button>
+												<div class="text-block">
+													<h4>Alp — над пропеастью во ржи</h4>
+													<a class="more" href="">Подробнее  →</a>
+													<ul class="rating white">
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a href="#"></a></li>
+														<li><a href="#"></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="reviews col-lg-4 col-md-6">
+											<div class="img-wrap" style="background-image:url(img/pic-48.jpg)">
+
+												<div class="header-reviews">
+													<span>ОБЗОР</span>
+													<p>10 ДЕКАБРЯ 2014</p>
+												</div>
+												<button type="button" class="btn btn-default">ОБЗОР</button>
+												<div class="text-block">
+													<h4>Alp — над пропеастью во ржи</h4>
+													<a class="more" href="">Подробнее  →</a>
+													<ul class="rating white">
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a href="#"></a></li>
+														<li><a href="#"></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="reviews col-lg-4 col-md-6">
+											<div class="img-wrap" style="background-image:url(img/pic-49.jpg)">
+
+												<div class="header-reviews">
+													<span>ОБЗОР</span>
+													<p>10 ДЕКАБРЯ 2014</p>
+												</div>
+												<button type="button" class="btn btn-default">ОБЗОР</button>
+												<div class="text-block">
+													<h4>Alp — над пропеастью во ржи</h4>
+													<a class="more" href="">Подробнее  →</a>
+													<ul class="rating white">
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a href="#"></a></li>
+														<li><a href="#"></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="reviews col-lg-4 col-md-6">
+											<div class="img-wrap" style="background-image:url(img/pic-50.jpg)">
+
+												<div class="header-reviews">
+													<span>ОБЗОР</span>
+													<p>10 ДЕКАБРЯ 2014</p>
+												</div>
+												<button type="button" class="btn btn-default">ОБЗОР</button>
+												<div class="text-block">
+													<h4>Game — над пропеастью во ржи</h4>
+													<a class="more" href="">Подробнее  →</a>
+													<ul class="rating white">
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a href="#"></a></li>
+														<li><a href="#"></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="reviews col-lg-4 col-md-6">
+											<div class="img-wrap" style="background-image:url(img/pic-51.jpg)">
+
+												<div class="header-reviews">
+													<span>ОБЗОР</span>
+													<p>10 ДЕКАБРЯ 2014</p>
+												</div>
+												<button type="button" class="btn btn-default">ОБЗОР</button>
+												<div class="text-block">
+													<h4>Alp — над пропеастью во ржи</h4>
+													<a class="more" href="">Подробнее  →</a>
+													<ul class="rating white">
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a href="#"></a></li>
+														<li><a href="#"></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="reviews col-lg-4 col-md-6">
+											<div class="img-wrap" style="background-image:url(img/pic-52.jpg)">
+
+												<div class="header-reviews">
+													<span>ОБЗОР</span>
+													<p>10 ДЕКАБРЯ 2014</p>
+												</div>
+												<button type="button" class="btn btn-default">ОБЗОР</button>
+												<div class="text-block">
+													<h4>Alp — над пропеастью во ржи</h4>
+													<a class="more" href="">Подробнее  →</a>
+													<ul class="rating white">
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a href="#"></a></li>
+														<li><a href="#"></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="reviews col-lg-4 col-md-6">
+											<div class="img-wrap" style="background-image:url(img/pic-53.jpg)">
+
+												<div class="header-reviews">
+													<span>ОБЗОР</span>
+													<p>10 ДЕКАБРЯ 2014</p>
+												</div>
+												<button type="button" class="btn btn-default">ОБЗОР</button>
+												<div class="text-block">
+													<h4>Alp — над пропеастью во ржи</h4>
+													<a class="more" href="">Подробнее  →</a>
+													<ul class="rating white">
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a href="#"></a></li>
+														<li><a href="#"></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="reviews col-lg-4 col-md-6">
+											<div class="img-wrap" style="background-image:url(img/pic-54.jpg)">
+
+												<div class="header-reviews">
+													<span>ОБЗОР</span>
+													<p>10 ДЕКАБРЯ 2014</p>
+												</div>
+												<button type="button" class="btn btn-default">ОБЗОР</button>
+												<div class="text-block">
+													<h4>Alp — над пропеастью во ржи</h4>
+													<a class="more" href="">Подробнее  →</a>
+													<ul class="rating white">
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a href="#"></a></li>
+														<li><a href="#"></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="reviews col-lg-4 col-md-6">
+											<div class="img-wrap" style="background-image:url(img/pic-55.jpg)">
+
+												<div class="header-reviews">
+													<span>ОБЗОР</span>
+													<p>10 ДЕКАБРЯ 2014</p>
+												</div>
+												<button type="button" class="btn btn-default">ОБЗОР</button>
+												<div class="text-block">
+													<h4>Сlouds Knights</h4>
+													<span>Studio Hight Five</span>
+
+													<a class="more" href="">Подробнее  →</a>
+													<ul class="rating white">
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a href="#"></a></li>
+														<li><a href="#"></a></li>
+													</ul>
+												</div>
+												<div class="img-block"><img src="img/pic-29.jpg" alt=""></div>
+											</div>
+										</div>
+
+										<div class="reviews col-lg-4 col-md-6">
+											<div class="img-wrap" style="background-image:url(img/pic-56.jpg)">
+
+												<div class="header-reviews">
+													<span>ОБЗОР</span>
+													<p>10 ДЕКАБРЯ 2014</p>
+												</div>
+												<button type="button" class="btn btn-default">СКИДКА</button>
+												<div class="text-block">
+													<h4>Сlouds Knights</h4>
+													<span>Аркады</span>
+													
+													<p class="price">
+														336
+														<span>a</span>
+													</p>
+
+													<div class="free">
+														<span class="plus">+</span>
+														<p>Бесплатно</p>
+													</div>
+												</div>
+												<div class="img-block"><img src="img/pic-44.jpg" alt=""></div>
+											</div>
+										</div>
+
+										<div class="reviews col-lg-4 col-md-6">
+											<div class="img-wrap" style="background-image:url(img/pic-53.jpg)">
+
+												<div class="header-reviews">
+													<span>ОБЗОР</span>
+													<p>10 ДЕКАБРЯ 2014</p>
+												</div>
+												<button type="button" class="btn btn-default">ОБЗОР</button>
+												<div class="text-block">
+													<h4>Alp — над пропеастью во ржи</h4>
+													<a class="more" href="">Подробнее  →</a>
+													<ul class="rating white">
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a href="#"></a></li>
+														<li><a href="#"></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="reviews col-lg-4 col-md-6">
+											<div class="img-wrap" style="background-image:url(img/pic-54.jpg)">
+
+												<div class="header-reviews">
+													<span>ОБЗОР</span>
+													<p>10 ДЕКАБРЯ 2014</p>
+												</div>
+												<button type="button" class="btn btn-default">ОБЗОР</button>
+												<div class="text-block">
+													<h4>Alp — над пропеастью во ржи</h4>
+													<a class="more" href="">Подробнее  →</a>
+													<ul class="rating white">
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a href="#"></a></li>
+														<li><a href="#"></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+		
+										<div class="reviews col-lg-4 col-md-6">
+											<div class="img-wrap" style="background-image:url(img/pic-53.jpg)">
+
+												<div class="header-reviews">
+													<span>ОБЗОР</span>
+													<p>10 ДЕКАБРЯ 2014</p>
+												</div>
+												<button type="button" class="btn btn-default">ОБЗОР</button>
+												<div class="text-block">
+													<h4>Alp — над пропеастью во ржи</h4>
+													<a class="more" href="">Подробнее  →</a>
+													<ul class="rating white">
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a href="#"></a></li>
+														<li><a href="#"></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="reviews col-lg-4 col-md-6">
+											<div class="img-wrap" style="background-image:url(img/pic-54.jpg)">
+
+												<div class="header-reviews">
+													<span>ОБЗОР</span>
+													<p>10 ДЕКАБРЯ 2014</p>
+												</div>
+												<button type="button" class="btn btn-default">ОБЗОР</button>
+												<div class="text-block">
+													<h4>Alp — над пропеастью во ржи</h4>
+													<a class="more" href="">Подробнее  →</a>
+													<ul class="rating white">
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a href="#"></a></li>
+														<li><a href="#"></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="reviews col-lg-4 col-md-6">
+											<div class="img-wrap" style="background-image:url(img/pic-50.jpg)">
+																							
+												<div class="header-reviews">
+													<span>ОБЗОР</span>
+													<p>10 ДЕКАБРЯ 2014</p>
+												</div>
+												<button type="button" class="btn btn-default">ОБЗОР</button>
+												<div class="text-block">
+													<h4>Alp — над пропеастью во ржи</h4>
+													<a class="more" href="">Подробнее  →</a>
+													<ul class="rating white">
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a class="active" href="#"></a></li>
+														<li><a href="#"></a></li>
+														<li><a href="#"></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<nav class="pagination-cont">
+									<ul class="pagination">
+										<li class="prev"><a href="#"><i></i> Назад</a></li>
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">5</a></li>
+										<li><a href="#">6</a></li>
+										<li class="next"><a href="#">Еще <i></i></a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="profile-gifts">
+					<p class="your-account"> На вашем счету: <i></i><span>500</span></p>
+					<div class="gold-gift">
+						<i></i>
+						<p><b>appstore.in</b>/vis323/23423/play |</p>
+					</div>
+					<div class="gold-wrap">
+						<div class="product-block arcade-wrap">
+							<div class="img-block">
+								<span><img src="img/pic-44.jpg"></span>
+							</div>
+							<div class="text-block arcade">
+								<h3>CALL OF MINI: INFINITY</h3>
+								<p class="category">Arcane Studios</p>
+								<a href="#" class="price-btn">
+									<span><s>336 P</s></span>
+									<p class="free">Бесплатно!</p>
+								</a>
+							</div>
+						</div>
+						<h2>Поздравляем! </h2>
+						<p class="discount">Вы можете купить эту игру со скидкой <span>0,005%</span></p>
+						<p class="less-money">С вашего счета будет списано: <i></i><span> 25</span> </p>
+						<a class="buy" href="#">Купить</a>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="profile-setting">
+					<h2>Настройки аккаунта</h2>
+					<p>Нажмите на соответствующую иконку платформы чтобы связать ее с вашим аккаунтом</p>
+					<ul>
+						<li class="windows-phone"><a href="#"><i></i></a></li>
+						<li class="consoles"><a href="#"><i></i></a></li>
+						<li class="active android"><a href="#"><i></i></a></li>
+						<li class="ios"><a href="#"><i></i></a></li>
+					</ul>
+
+					<div class="footer-button">
+						<a class="save" href="#">Сохранить изменения</a>
+						<a class="cancel" href="#">Отмена</a>
+					</div>
+				</div>
+			</div>
+	
+			<div class="pre-footer profile-iner">
+				<footer id="footer">
+					<nav>
+						<a href="#">О нас</a>
+						<a href="#">Как связаться</a>
+						<a href="#">Сотрудничество</a>
+						<a href="#">Разработчикам</a>
+						<a href="#">Рекламодателям</a>
+						<a href="#">Правообладателям</a>
+					</nav>
+					<p>Все права защищены. GTOP © 2014 Подписаться на рассылку новостей  </p>
+
+					<ul>
+						<li><a class="fb" href="#"></a></li>
+						<li><a class="tw" href="#"></a></li>
+						<li><a class="gp" href="#"></a></li>
+						<li><a class="in" href="#"></a></li>
+						<li><a class="yt" href="#"></a></li>
+						<li><a class="vk" href="#"></a></li>
+					</ul>
+				</footer>
+			</div>
+		</section>
+	</div><!-- /.container -->
+	<script src="js/vendor/jquery-1.11.1.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
