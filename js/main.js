@@ -23,6 +23,8 @@ $(document).ready(function(){
 		$(this).toggleClass('active');
 		$('.gold-wrap').toggleClass('active');
 	});
+
+	$('.carousel').carousel()
 });
 
 
