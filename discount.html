@@ -12,11 +12,11 @@
 <!-- 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
-	<link rel="stylesheet" href="css/main.css">
-<!-- 
+<!-- 	<link rel="stylesheet" href="css/main.css"> -->
+
 	<link rel="stylesheet/less" type="text/css" href="css/main.less" />
 	<script src="js/vendor/less.js" type="text/javascript"></script>
- -->
+
 	<!--[if lt IE 9]>
 			<script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
 	<![endif]-->
@@ -28,6 +28,7 @@
 
 
 
+
 	<div id="menu">
 		<aside id="left-aside">
 			<div class="top-aside">
@@ -36,66 +37,27 @@
 			</div>
 			<nav class="main-nav">
 				<ul>
-					<li class="play-games">
-						<a href="#" data-color="play-games">
-							<i class="category"></i>
-							
-							<span class="ico-block ">
-								<i><i></i></i>
-							</span>
-							<span class="title">Игровые новости</span>
-						</a>
-					</li>
-					<li class="ios">
-						<a href="#" data-color="ios">
-							<i class="category"></i>
-
-							<span class="ico-block ">
-								<i><i></i></i>
-							</span>
-							<span class="title">iOS</span>
-						</a>
-					</li>
-					<li class="android">
-						<a href="#" data-color="android">
-							<i class="category"></i>
-							
-							<span class="ico-block ">
-								<i><i></i></i>
-							</span>
-							<span class="title">Android</span>
-						</a>
-					</li>
-					<li class="windows-phone">
-						<a href="#" data-color="windows-phone">
-							<i class="category"></i>
-							
-							<span class="ico-block ">
-								<i><i></i></i>
-							</span>
-							<span class="title">Windows Phone</span>
-						</a>
-					</li>
-					<li class="consoles">
-						<a href="#" data-color="consoles">
-							<i class="category"></i>
-							
-							<span class="ico-block ">
-								<i><i></i></i>
-							</span>
-							<span class="title">Консоли</span>
-						</a>
-					</li>
-					<li class="pc">
-						<a href="#" data-color="pc">
-							<i class="category"></i>
-							
-							<span class="ico-block ">
-								<i><i></i></i>
-							</span>
-							<span class="title">ПК</span>
-						</a>
-					</li>
+		            <li class="ios">
+		                <a href="/" data-color="ios">
+		                    <i class="category"></i>
+							<span class="ico-block ion-social-apple"></span>	
+		                    <span class="title">iOS</span>
+		                </a>
+		            </li>
+		            <li class="android">
+		                <a href="/" data-color="android">
+		                    <i class="category"></i>
+							<span class="ico-block ion-social-android"></span>	
+		                    <span class="title">Android</span>
+		                </a>
+		            </li>
+		            <li class="windows-phone">
+		                <a href="/" data-color="windows-phone">
+		                    <i class="category"></i>
+							<span class="ico-block ion-social-windows"></span>		
+		                    <span class="title">Windows Phone</span>
+		                </a>
+		            </li>
 				</ul>
 			</nav>
 
@@ -104,13 +66,13 @@
 					<span class="img-block">
 						<img src="img/pic-1.jpg" alt="">
 					</span>
-					<i></i>
+					<i class="ion-ios-arrow-down"></i>
 				</a>
 				<div class="logger-info">
 					<div class="level">3</div>
 					<ul>
-						<li><i class="like"></i>2598</li>
-						<li><i class="view"></i>16342</li>
+						<li><i class="like ion-thumbsup"></i>2598</li>
+						<li><i class="view ion-eye"></i>16342</li>
 					</ul>
 				</div>
 				<div class="logger-dropdown">
@@ -138,7 +100,7 @@
 	</div>
 
 	<div id="topbar" class="slide">
-		<a id="menu-button">
+		<a id="menu-button" href="#menu">
 			<span></span>
 			<span></span>
 			<span></span>
@@ -152,7 +114,7 @@
 		<section id="content-block">
 
 			<div class="discount-info">
-				<h1>Скидки <a href="#"></a></h1>
+				<h1>Скидки</h1>
 				<p>Список пополняется автоматически <br/>из App Store России.</p>
 			</div>
 
@@ -1198,7 +1160,7 @@
 		</section>
 	</div><!-- /.container -->
 	<script src="js/vendor/jquery-1.11.1.min.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/jquery.mmenu.min.all.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

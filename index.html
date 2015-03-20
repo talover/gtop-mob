@@ -9,14 +9,12 @@
 	<title>gtop</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<!-- 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
-	<link rel="stylesheet" href="css/main.css">
-<!-- 
+
+<!-- 	<link rel="stylesheet" href="css/main.css"> -->
+
 	<link rel="stylesheet/less" type="text/css" href="css/main.less" />
 	<script src="js/vendor/less.js" type="text/javascript"></script>
- -->
+
 	<!--[if lt IE 9]>
 			<script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
 	<![endif]-->
@@ -36,66 +34,27 @@
 			</div>
 			<nav class="main-nav">
 				<ul>
-					<li class="play-games">
-						<a href="#" data-color="play-games">
-							<i class="category"></i>
-							
-							<span class="ico-block ">
-								<i><i></i></i>
-							</span>
-							<span class="title">Игровые новости</span>
-						</a>
-					</li>
-					<li class="ios">
-						<a href="#" data-color="ios">
-							<i class="category"></i>
-
-							<span class="ico-block ">
-								<i><i></i></i>
-							</span>
-							<span class="title">iOS</span>
-						</a>
-					</li>
-					<li class="android">
-						<a href="#" data-color="android">
-							<i class="category"></i>
-							
-							<span class="ico-block ">
-								<i><i></i></i>
-							</span>
-							<span class="title">Android</span>
-						</a>
-					</li>
-					<li class="windows-phone">
-						<a href="#" data-color="windows-phone">
-							<i class="category"></i>
-							
-							<span class="ico-block ">
-								<i><i></i></i>
-							</span>
-							<span class="title">Windows Phone</span>
-						</a>
-					</li>
-					<li class="consoles">
-						<a href="#" data-color="consoles">
-							<i class="category"></i>
-							
-							<span class="ico-block ">
-								<i><i></i></i>
-							</span>
-							<span class="title">Консоли</span>
-						</a>
-					</li>
-					<li class="pc">
-						<a href="#" data-color="pc">
-							<i class="category"></i>
-							
-							<span class="ico-block ">
-								<i><i></i></i>
-							</span>
-							<span class="title">ПК</span>
-						</a>
-					</li>
+		            <li class="ios">
+		                <a href="/" data-color="ios">
+		                    <i class="category"></i>
+							<span class="ico-block ion-social-apple"></span>	
+		                    <span class="title">iOS</span>
+		                </a>
+		            </li>
+		            <li class="android">
+		                <a href="/" data-color="android">
+		                    <i class="category"></i>
+							<span class="ico-block ion-social-android"></span>	
+		                    <span class="title">Android</span>
+		                </a>
+		            </li>
+		            <li class="windows-phone">
+		                <a href="/" data-color="windows-phone">
+		                    <i class="category"></i>
+							<span class="ico-block ion-social-windows"></span>		
+		                    <span class="title">Windows Phone</span>
+		                </a>
+		            </li>
 				</ul>
 			</nav>
 
@@ -104,13 +63,13 @@
 					<span class="img-block">
 						<img src="img/pic-1.jpg" alt="">
 					</span>
-					<i></i>
+					<i class="ion-ios-arrow-down"></i>
 				</a>
 				<div class="logger-info">
 					<div class="level">3</div>
 					<ul>
-						<li><i class="like"></i>2598</li>
-						<li><i class="view"></i>16342</li>
+						<li><i class="like ion-thumbsup"></i>2598</li>
+						<li><i class="view ion-eye"></i>16342</li>
 					</ul>
 				</div>
 				<div class="logger-dropdown">
@@ -138,7 +97,7 @@
 	</div>
 
 	<div id="topbar" class="slide">
-		<a id="menu-button">
+		<a id="menu-button" href="#menu">
 			<span></span>
 			<span></span>
 			<span></span>
@@ -177,35 +136,8 @@
 						</div>
 						<div class="text-block clearfix">
 							<div class="title-article">
-								<div class="pic-block">
-									<div class="img-block">
-										<img src="img/pic-16.jpg" alt="">
-									</div>
-									
-									<ul class="rating big">
-										<li><a class="active" href="#"></a></li>
-										<li><a class="active" href="#"></a></li>
-										<li><a class="active" href="#"></a></li>
-										<li><a href="#"></a></li>
-										<li><a href="#"></a></li>
-									</ul>
-								</div>
 								<div class="text-block">
 									<h3>Clash of Clans<span>1+</span></h3>
-									<ul class="platform">
-										<li><a class="apple" href="#"></a></li>
-										<li><a class="android" href="#"></a></li>
-										<li><a class="windows-os" href="#"></a></li>
-										<li><a class="pc" href="#">пк</a></li>
-									</ul>
-
-									<div class="short-info">
-										<p class="category-title">НОВОСТИ  ПК</p>
-										<ul class="post-cont">
-											<li><i class="view"></i>3186</li>
-											<li><i class="comment"></i>257</li>
-										</ul>
-									</div>
 								</div>
 							</div>
 							
@@ -219,10 +151,18 @@
 						</div>
 
 						<div class="bottom-block">
-							<ul class="like-wrap">
-								<li><a class="star" href="#"></a></li>
-								<li class="like"><a href="#"></a></li>
+							<a class="author" href="#">
+								<span><img src="img/pic-7.jpg" alt=""></span>Игорь Васлицкий
+							</a>
+
+							<ul class="rating big">
+								<li><a class="active" href="#"></a></li>
+								<li><a class="active" href="#"></a></li>
+								<li><a class="active" href="#"></a></li>
+								<li><a class="active" href="#"></a></li>
+								<li><a href="#"></a></li>
 							</ul>
+
 							<a class="more" href="#">Подробнее  <span>→</span></a>
 						</div>
 					</div>
@@ -270,7 +210,7 @@
 									<li><a class="apple" href="#"></a></li>
 									<li><a class="android" href="#"></a></li>
 									<li><a class="windows-os" href="#"></a></li>
-									<li><a class="pc" href="#">пк</a></li>
+									<li><a class="pc" href="#"></a></li>
 								</ul>
 								<h3>Star warsдля iOS — над пропастью во ржи игра расчлененка</h3>
 								<ul class="bottom">
@@ -299,7 +239,7 @@
 										<li><a class="apple" href="#"></a></li>
 										<li><a class="android" href="#"></a></li>
 										<li><a class="windows-os" href="#"></a></li>
-										<li><a class="pc" href="#">пк</a></li>
+										<li><a class="pc" href="#"></a></li>
 									</ul>
 								</div>
 								<div class="cont-new">
@@ -321,7 +261,7 @@
 										<li><a class="apple" href="#"></a></li>
 										<li><a class="android" href="#"></a></li>
 										<li><a class="windows-os" href="#"></a></li>
-										<li><a class="pc" href="#">пк</a></li>
+										<li><a class="pc" href="#"></a></li>
 									</ul>
 								</div>
 								<div class="cont-new">
@@ -343,7 +283,7 @@
 										<li><a class="apple" href="#"></a></li>
 										<li><a class="android" href="#"></a></li>
 										<li><a class="windows-os" href="#"></a></li>
-										<li><a class="pc" href="#">пк</a></li>
+										<li><a class="pc" href="#"></a></li>
 									</ul>
 								</div>
 								<div class="cont-new">
@@ -373,7 +313,7 @@
 										<li><a class="apple" href="#"></a></li>
 										<li><a class="android" href="#"></a></li>
 										<li><a class="windows-os" href="#"></a></li>
-										<li><a class="pc" href="#">пк</a></li>
+										<li><a class="pc" href="#"></a></li>
 									</ul>
 								</div>
 								<div class="cont-new">
@@ -402,7 +342,7 @@
 											<li><a class="apple" href="#"></a></li>
 											<li><a class="android" href="#"></a></li>
 											<li><a class="windows-os" href="#"></a></li>
-											<li><a class="pc" href="#">пк</a></li>
+											<li><a class="pc" href="#"></a></li>
 										</ul>
 									</div>
 									<div class="cont-new">
@@ -421,7 +361,7 @@
 										<li><a class="apple" href="#"></a></li>
 										<li><a class="android" href="#"></a></li>
 										<li><a class="windows-os" href="#"></a></li>
-										<li><a class="pc" href="#">пк</a></li>
+										<li><a class="pc" href="#"></a></li>
 									</ul>
 									<h3>Star warsдля iOS — над пропастью во ржи игра расчлененка</h3>
 									<ul class="bottom">
@@ -453,7 +393,7 @@
 									<li><a class="apple" href="#"></a></li>
 									<li><a class="android" href="#"></a></li>
 									<li><a class="windows-os" href="#"></a></li>
-									<li><a class="pc" href="#">пк</a></li>
+									<li><a class="pc" href="#"></a></li>
 								</ul>
 								<h3>Star warsдля iOS — над пропастью во ржи игра расчлененка</h3>
 								<ul class="bottom">
@@ -475,7 +415,7 @@
 										<li><a class="apple" href="#"></a></li>
 										<li><a class="android" href="#"></a></li>
 										<li><a class="windows-os" href="#"></a></li>
-										<li><a class="pc" href="#">пк</a></li>
+										<li><a class="pc" href="#"></a></li>
 									</ul>
 								</div>
 								<div class="cont-new">
@@ -497,7 +437,7 @@
 										<li><a class="apple" href="#"></a></li>
 										<li><a class="android" href="#"></a></li>
 										<li><a class="windows-os" href="#"></a></li>
-										<li><a class="pc" href="#">пк</a></li>
+										<li><a class="pc" href="#"></a></li>
 									</ul>
 								</div>
 								<div class="cont-new">
@@ -519,7 +459,7 @@
 										<li><a class="apple" href="#"></a></li>
 										<li><a class="android" href="#"></a></li>
 										<li><a class="windows-os" href="#"></a></li>
-										<li><a class="pc" href="#">пк</a></li>
+										<li><a class="pc" href="#"></a></li>
 									</ul>
 								</div>
 								<div class="cont-new">
@@ -549,7 +489,7 @@
 										<li><a class="apple" href="#"></a></li>
 										<li><a class="android" href="#"></a></li>
 										<li><a class="windows-os" href="#"></a></li>
-										<li><a class="pc" href="#">пк</a></li>
+										<li><a class="pc" href="#"></a></li>
 									</ul>
 								</div>
 								<div class="cont-new">
@@ -563,7 +503,7 @@
 				</div>
 
 				<a class="add-news" href="#">
-					<i></i>
+					<i class="ion-ios-loop-strong"></i>
 					Подгрузить новости
 				</a>
 				<div class="clearfix"></div>
@@ -593,18 +533,17 @@
 					<p>Все права защищены. GTOP © 2014 Подписаться на рассылку новостей  </p>
 
 					<ul>
-						<li><a class="fb" href="#"></a></li>
-						<li><a class="tw" href="#"></a></li>
-						<li><a class="gp" href="#"></a></li>
-						<li><a class="in" href="#"></a></li>
-						<li><a class="yt" href="#"></a></li>
-						<li><a class="vk" href="#"></a></li>
+						<li><a class="ion-social-twitter" href="#"></a></li>
+						<li><a class="ion-social-facebook" href="#"></a></li>
+						<li><a class="ion-social-googleplus-outline" href="#"></a></li>
+						<li><a href="#"><i class="vk icon"></i></a></li>
 					</ul>
 				</footer>
 			</div>
 		</section><!--/#content-block-->
 	</div><!-- /.container -->
 	<script src="js/vendor/jquery-1.11.1.min.js"></script>
+	<script src="js/vendor/jquery.mmenu.min.all.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
